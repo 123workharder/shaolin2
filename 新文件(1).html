@@ -74,6 +74,33 @@
         .no-wrap {
             white-space: nowrap;
         }
+        .rounded-box {  
+            background-color: #007bff; /* 蓝色背景 */  
+            color: white; /* 文字颜色为白色 */  
+            padding: 20px; /* 内边距 */  
+            border-radius: 15px; /* 圆角 */  
+            margin-top: 20px; /* 上边距 */  
+            width: 300px; /* 宽度，根据需要调整 */  
+            text-align: center; /* 文字居中 */  
+        }  
+  
+        .box-header {  
+            font-size: 20px; /* 标题文字大小 */  
+            font-weight: bold; /* 标题加粗 */  
+            margin-bottom: 10px; /* 标题和图片之间的间隔 */  
+        }  
+  
+        .box-image {  
+            width: 100%; /* 图片宽度占满容器 */  
+            height: auto; /* 图片高度自适应 */  
+            display: block; /* 去除图片下方的默认间隙 */  
+            margin: 0 auto; /* 居中图片 */  
+        }  
+  
+        .box-text {  
+            margin-top: 10px; /* 文字和图片之间的间隔 */  
+            font-size: 16px; /* 文字大小 */  
+        }
     </style>
 </head>
 <body>
@@ -96,7 +123,13 @@
             <li>60岁以上老人</li>
             <li>残疾人，军人，凭证件免费</li>
         </ul>/*第一部分文字部分*/
-        
+        /*第一个方框中的内容*/
+    <div class="rounded-box">  
+        <div class="box-header">线路特色</div>  
+        <img src="./方框1.1.jpg" alt="图片描述" class="box-image">  
+        <p class="box-text">这里是关于图片的更多文字描述。</p>  
+    </div>  
+        /*实验部分结束位置*/
     </div>
 </body>
 </html>
