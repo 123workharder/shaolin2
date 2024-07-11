@@ -11,7 +11,7 @@
             background-color: #f4f4f4;
         }
         .container {
-            width: 50%;
+            width: 30%;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
@@ -101,6 +101,11 @@
             margin-top: 10px; /* 文字和图片之间的间隔 */  
             font-size: 16px; /* 文字大小 */  
         }
+        .dashed-box {
+        border: 2px dashed #999; /* 设置虚线边框，2px 宽度，颜色为 #999 */
+        padding: 20px; /* 内边距，使内容与边框有间距 */
+        display: inline-block; /* 让框适应内容宽度 */
+    }
     </style>
 </head>
 <body>
@@ -118,13 +123,13 @@
         <p class="highlight indented"> 成人 98元（少林寺大门票自理）</p>
         <p class="highlight indented"> 十一期间天天发</p>
         <p><br><span class="brown indented">优惠门票收费标准</span></p>
-        <ul class="list">
+        <ul class="list highlight">
             <li>1.4米以下</li>
             <li>60岁以上老人</li>
             <li>残疾人，军人，凭证件免费</li>
-        </ul>/*第一部分文字部分*/
+        </ul>
         /*第一个方框中的内容*/
-    <div class="rounded-box">  
+    <div class="dashed-box">  
         <div class="box-header">线路特色</div>  
         <img src="./方框1.1.jpg" alt="图片描述" class="box-image">  
         <p class="box-text">这里是关于图片的更多文字描述。</p>  
